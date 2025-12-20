@@ -34,4 +34,6 @@ urlpatterns = [
     path('orders/place/', OrderViews.PlaceOrderView.as_view()),
 
     path('orders/', OrderViews.MyOrdersView.as_view()),
+
+    path('orders/<int:pk>/', OrderViews.OrderDetailView.as_view()),
 ]
